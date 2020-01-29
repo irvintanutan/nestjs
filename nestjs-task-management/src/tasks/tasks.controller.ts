@@ -69,8 +69,7 @@ export class TasksController {
       `User ${user.username} creating new task. Data: ${JSON.stringify(
         createTaskDto
       )}`
-    );
-
+    ); 
     return this.taskService.createTask(createTaskDto, user);
   }
 
